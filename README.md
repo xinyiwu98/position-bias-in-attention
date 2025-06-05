@@ -1,14 +1,12 @@
-# Position Bias in Attention
+# 🧠 *On the Emergence of Position Bias in Transformers*  
+📌 **ICML 2025**  
+📄 [Read the Paper](https://arxiv.org/abs/2412.17245)  
+👥 [**Xinyi Wu**](https://xinyiwu98.github.io/), [Yifei Wang](https://yifeiwang77.com/), [Stefanie Jegelka](https://people.csail.mit.edu/stefje/), [Ali Jadbabaie](https://jadbabaie.mit.edu/)
 
-[On the Emergence of Position Bias in Transformers](https://arxiv.org/abs/2412.17245)
-
-[Xinyi Wu](https://xinyiwu98.github.io/), [Yifei Wang](https://yifeiwang77.com/), [Stefanie Jegelka](https://people.csail.mit.edu/stefje/), [Ali Jadbabaie](https://jadbabaie.mit.edu/)
-
-*ICML 2025*
 
 ![teaser](mask-graphs.png)
 
-### Install packages
+### 📦 Install packages
 
 ```python
 conda create -n pos-bias python=3.9
@@ -19,7 +17,7 @@ pip install -r requirements.txt
 
 ### 🚀 Run experiments
 
-This example trains a 2-layer transformer with causal masking and no positional encoding (NoPE) on a dataset biased toward the beginning of the sequence.
+This example trains a 2-layer self-attention network (SAN) with causal masking and no positional encoding (NoPE) on a dataset biased toward the beginning of the sequence.
  
 ```python
 
@@ -27,16 +25,16 @@ python train.py --mask causal --num_attn_layers 2 --pe no --train_bias --index 0
 
 ```
 
-### Mask Options 
+### 🎭 Mask Options 
 | Option           | Description                                                                           |
 | ---------------- | ------------------------------------------------------------------------------------- |
 | `full`           | No masking (fully connected attention across all positions).                          |
 | `causal`         | Standard autoregressive causal mask, allowing attention only to previous tokens.      |
-| `window` | Local attention with a fixed window size. Use `--width` to specify the window.        |
+| `window` | Local attention with a fixed window size. Use `--window_size` to specify the size of the window.        |
 | `prefix`         | Prefix-style mask. Use `--num_prefixes` to specify the number of prefix tokens.
 
 
-### PE Options 
+### 🔢 PE Options 
 | Option  | Description                                                                     |
 | ------- | ------------------------------------------------------------------------------- |
 | `no`    | No positional encoding (NoPE).                                                  |
@@ -54,7 +52,7 @@ I’d love to hear your suggestions! Feel free to open an issue or email me xiny
 
 
 
-### Citation
+### 📝 Citation
 Thank you for your interest in our work!
 Please consider citing
 ```bibtex

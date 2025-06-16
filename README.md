@@ -1,6 +1,6 @@
 # 🧠 *On the Emergence of Position Bias in Transformers*  
 📌 **ICML 2025**  
-📄 [Read the Paper](https://arxiv.org/abs/2412.17245)  
+📄 [Read the Paper](https://arxiv.org/abs/2502.01951)  
 👥 [**Xinyi Wu**](https://xinyiwu98.github.io/), [Yifei Wang](https://yifeiwang77.com/), [Stefanie Jegelka](https://people.csail.mit.edu/stefje/), [Ali Jadbabaie](https://jadbabaie.mit.edu/)
 
 
